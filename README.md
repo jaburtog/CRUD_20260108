@@ -3,6 +3,12 @@ CRUD Inventory Control System
 
 A modern inventory control system built with Java 17, Jakarta EE 10, PostgreSQL, and Open Liberty.
 
+## Documentation
+
+- [📖 Setup & Deployment Guide](DEPLOYMENT.md) - Detailed deployment instructions
+- [🔌 API Documentation](API.md) - Complete REST API reference
+- [🤝 Contributing Guide](CONTRIBUTING.md) - How to contribute to the project
+
 ## Features
 
 - ✅ **CRUD Operations**: Create, Read, Update, and Delete products
@@ -57,6 +63,24 @@ CRUD_20260108/
 ```
 
 ## Setup Instructions
+
+For complete deployment instructions including Docker setup, manual PostgreSQL installation, and production deployment, see [DEPLOYMENT.md](DEPLOYMENT.md).
+
+### Quick Start
+
+1. **Start PostgreSQL with Docker:**
+   ```bash
+   docker-compose up -d
+   ```
+
+2. **Build and Run:**
+   ```bash
+   mvn liberty:dev
+   ```
+
+3. **Access the Application:**
+   - Web UI: http://localhost:9080
+   - REST API: http://localhost:9080/api/products
 
 ### 1. Database Setup
 
