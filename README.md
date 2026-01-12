@@ -25,7 +25,7 @@ A modern inventory control system built with Java 21, Jakarta EE 10, PostgreSQL,
 
 ## Prerequisites
 
-- Java 21 or higher
+- Java 17 or higher (Java 21 recommended for production)
 - Maven 3.8+
 - PostgreSQL 15+
 - Open Liberty (will be downloaded by Maven plugin)
