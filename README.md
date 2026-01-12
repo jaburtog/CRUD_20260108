@@ -1,7 +1,7 @@
 # CRUD_20260108
 CRUD Inventory Control System
 
-A modern inventory control system built with Java 21, Jakarta EE 10, PostgreSQL, and Open Liberty.
+A modern inventory control system built with Java 17, Jakarta EE 10, PostgreSQL, and Open Liberty.
 
 ## Features
 
@@ -14,7 +14,7 @@ A modern inventory control system built with Java 21, Jakarta EE 10, PostgreSQL,
 
 ## Technology Stack
 
-- **Java**: 21
+- **Java**: 17 (Java 21+ compatible)
 - **Jakarta EE**: 10.0.0
 - **Application Server**: Open Liberty
 - **Database**: PostgreSQL 15+
@@ -240,7 +240,7 @@ The application automatically creates the following table structure:
 - Default HTTPS port: 9443
 
 ### Build Errors
-- Ensure Java 21 is installed: `java -version`
+- Ensure Java 17 or higher is installed: `java -version`
 - Clean Maven cache: `mvn clean`
 - Update dependencies: `mvn clean install -U`
 
