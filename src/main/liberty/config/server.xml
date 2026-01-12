@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="Inventory Control Server">
+    <featureManager>
+        <feature>jakartaee-10.0</feature>
+        <feature>microProfile-6.1</feature>
+    </featureManager>
+
+    <httpEndpoint id="defaultHttpEndpoint"
+                  httpPort="9080"
+                  httpsPort="9443" />
+
+    <!-- PostgreSQL DataSource Configuration -->
+    <library id="postgresql-library">
+        <fileset dir="${shared.resource.dir}/postgresql" includes="*.jar"/>
+    </library>
+
+    <dataSource id="PostgresDS" jndiName="jdbc/inventoryDB">
+        <jdbcDriver libraryRef="postgresql-library"/>
+        <properties.postgresql 
+            serverName="localhost"
+            portNumber="5432"
+            databaseName="inventorydb"
+            user="postgres"
+            password="postgres"/>
+    </dataSource>
+
+    <webApplication location="inventory-control.war" contextRoot="/" />
+
+    <!-- Automatically expand WAR files -->
+    <applicationManager autoExpand="true"/>
+</server>
